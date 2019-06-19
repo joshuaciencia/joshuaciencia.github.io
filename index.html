@@ -1,13 +1,145 @@
-<!CTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>PagBloge Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1{
+	color: white;
+}
+
+img:hover{
+	opacity: 0.7;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<!-- MAIN (Center website) -->
+<div class="main">
 
+<h1>Joshua Hernandez</h1>
+<hr>
+
+<h1>Games</h1>
+
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+		<a href = "games/Tetris/index.html">
+			<img src="games/Tetris/mini.png" alt="Tetris" style="width:100%">
+		</a>
+      
+	  
+      <h3>Tetris</h3>
+      <p>Tetris is a tile-matching puzzle video game, originally designed and programmed by Russian game designer Alexey Pajitnov. It was released on June 6, 1984.</p>
+    </div>
+  </div>
+  
+   <div class="column">
+    <div class="content">
+		<a href = "games/Galaxy War/index.html">
+			<img src="games/Galaxy War/mini.png" alt="Galaxy War" style="width:100%">
+		</a>
+      
+      <h3>Galaxy War</h3>
+      <p>Based on the clasic asteroids game, Galaxy War brings back old memories with a retro style and a big challenge</p>
+    </div>
+  </div>
+     <div class="column">
+    <div class="content">
+		<a href = "games/Bomberman/index.html">
+			<img src="games/Bomberman/mini.png" alt="Bomberman" style="width:100%">
+		</a>
+      
+      <h3>Bomberman</h3>
+      <p>Bomberman is back with a new challenge and some features that will make you have some fun</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+		<a href = "games/Solar System Simulator/index.html">
+			<img src="games/Galaxy War/mini.png" alt="Galaxy War" style="width:100%">
+		</a>
+      
+      <h3>Solar System Simulator</h3>
+      <p>Based on the clasic asteroids game, Galaxy War brings back old memories with a retro style and a big challenge</p>
+    </div>
+  </div>
+  
+</div>
+
+<h1></h1>
+
+<div class="row">
+
+ </div> 
+ 
 </body>
 </html>
-
